@@ -1,0 +1,35 @@
+.conatct{
+    background-color: rgba(105, 121, 248, .24);
+}
+.mt-btn{
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    color: #6979f8;
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 25%;
+    height: 50px;
+}
+.debt{
+    background: url(https://moneytor.in/clear-dept-bg.bda92e5f7e246fad3d14.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 70%;
+    height: auto;
+}
+.mt-btn2{
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    color: #6979f8;
+    padding: 20px 0;
+    padding-bottom: 10px;
+    height: 50px;
+}
+@media(max-width:768px) {
+    .mt-btn{
+        width:50%
+    }
+}

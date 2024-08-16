@@ -1,0 +1,53 @@
+.solution h1 {
+    font: 900 34px / 1.21;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.solution h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #6979f8;
+}
+
+.solution img {
+    width: 60px;
+    height: 60px;
+}
+
+.solution p {
+    font-size: 14px;
+    padding: 10px 25px;
+}
+.card {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .25);
+    height: 200px;
+    margin: 0 40px;
+  }
+  
+  .example-card-footer {
+    padding: 16px;
+  }
+  .card-title{
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 10px!important;
+    color: #6979f8;
+  }
+  .mt-btn{
+    background-color: #fff;
+    border-color: #fff;
+    border: 1px solid #6979f8;
+    color: #6979f8;
+    padding:0 20px;
+    padding-bottom: 10px;
+}
+
+@media(max-width:768px){
+  .card{
+    height:100%;
+  }
+  .solution p{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,18 @@
+.footer{
+    background: url(/assets/img/footer.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+hr{
+    border: 1px solid #ffffff;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+}
+.col-md-3 ul li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 5px 0;
+}

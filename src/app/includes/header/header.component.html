@@ -1,0 +1,52 @@
+    <mat-toolbar  class="navbar px-lg-5 sticky-top">
+    <div class="d-none">
+        <button mat-icon-button (click)="sidenav.toggle()" class="menu-button">
+          <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div class="d-lg-none">
+        <button mat-icon-button (click)="sidenav.toggle()" class="menu-button">
+          <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <span class="title">
+    <img [src]="logo" alt="logo" height="40" routerLink="/home" style="cursor: pointer;" >
+  </span>
+    <span class="spacer"></span>
+    <nav class="desktop-menu px-5">
+      <a mat-button routerLink="/home" fragment="">{{'header.t1' | translate}}</a>
+      <a mat-button [routerLink]="'home'" fragment="about">{{'header.t2' | translate}}</a>
+      <a mat-button [routerLink]="'home'" fragment="solution">{{'header.t3' | translate}}</a>
+      <a mat-button [routerLink]="'home'" fragment="client">{{'header.t4' | translate}}</a>
+      <a mat-button [routerLink]="'home'" fragment="contactus">{{'header.t5' | translate}}</a>
+      <a mat-button [routerLink]="'home'" fragment="blog">{{'header.t6' | translate}}</a>
+      <button mat-flat-button [routerLink]="'home'" fragment="contactus">{{'header.t7' | translate}}</button>
+      <img src="assets/icons/translate.png" alt="translate" width="40" class="ms-4 " role="button" (click)="toggleDropdown()">
+
+      <div *ngIf="dropdownVisible" class="dropdown-menu">
+        <button class="dropdown-item" (click)="changeLanguage('en')">English</button>
+        <button class="dropdown-item" (click)="changeLanguage('hi')">हिन्दी</button>
+      </div>
+      <!-- <button (click)="changeLanguage('en')">English</button>
+      <button (click)="changeLanguage('hi')">हिन्दी</button> -->
+    </nav>
+  </mat-toolbar>
+  <mat-sidenav-container >
+    <mat-sidenav #sidenav mode="over" class="mobile-menu" >
+      <mat-nav-list>
+        <!-- <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a> -->
+        <a mat-list-item routerLink="/home" fragment="/about" (click)="sidenav.close()">Home</a>
+        <a mat-list-item [routerLink]="'home'" fragment="about" (click)="sidenav.close()">About Us</a>
+        <a mat-list-item [routerLink]="'home'" fragment="solution" (click)="sidenav.close()">Solutions</a>
+        <a mat-list-item [routerLink]="'home'" fragment="client" (click)="sidenav.close()">Clients</a>
+        <a mat-list-item [routerLink]="'home'" fragment="contactus" (click)="sidenav.close()">Reach out</a>
+        <a mat-list-item [routerLink]="'home'" fragment="blog" (click)="sidenav.close()">Blog</a>
+        <button mat-flat-button [routerLink]="'home'" fragment="contactus" (click)="sidenav.close()">Demo</button>
+      </mat-nav-list>
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

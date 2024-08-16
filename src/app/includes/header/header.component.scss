@@ -1,0 +1,119 @@
+/* Align title to the left and make sure the menu button is aligned properly */
+.menu-button {
+    margin-right: 16px;
+  }
+  .navbar{
+    background-color: #5741d5;
+    position: fixed;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  .desktop-menu {
+    display: flex;
+    button{
+        color: #5741d5;
+    }
+  }
+  .desktop-menu a{
+    padding: 0 30px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .sidenav-container {
+    height: 100%;
+  }
+
+  /* Scrolled navbar background and text color */
+.navbar.scrolled {
+    background-color: #ffffff; 
+    box-shadow: 0 2px 5px 0 rgba(52, 47, 51, .63);;
+  }
+  
+  .navbar.scrolled .desktop-menu a {
+    color: #000000; 
+  } 
+  .navbar.scrolled .desktop-menu button {
+    background-color: #5741d5;
+    color: #ffffff;
+  }
+  .navbar.scrolled .desktop-menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007aff; 
+    transition: width 0.3s ease;
+  }
+
+  .navbar.scrolled .desktop-menu a:hover::before {
+    width: 100%;
+  }
+
+  .desktop-menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; 
+    transition: width 0.3s ease;
+  }
+  
+  .desktop-menu a:hover::before {
+    width: 100%;
+  }
+
+  .desktop-menu {
+    position: relative;
+    display: inline-block;
+  
+    .dropdown-menu {
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background-color: white;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      border-radius: 5px;
+      overflow: hidden;
+  
+      .dropdown-item {
+        padding: 10px 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none; 
+    }
+    
+    .mobile-menu {
+      display: block; 
+    }
+  }
+  
+  

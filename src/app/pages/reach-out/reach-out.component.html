@@ -1,0 +1,78 @@
+<div class="conatct">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-md-6">
+                <h1 class="fs-4 fw-bold ">{{'contact.title1' | translate}}</h1>
+                <p>To schedule a product demo , or to know more about our other services, please fill in your contact
+                    details, and we will get in touch with you at the earliest</p>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-form-field appearance="fill" class="w-100">
+                                <mat-label>First Name</mat-label>
+                                <input matInput placeholder="First Name" >
+                              </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="fill" class="w-100">
+                                <mat-label>Last Name</mat-label>
+                                <input matInput placeholder="Last Name">
+                              </mat-form-field>
+                        </div>
+                    
+                    <mat-form-field appearance="fill" class="col-md-12">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Enter Email">
+                      </mat-form-field>
+                      <mat-form-field appearance="fill" class="fill-container col-md-12">
+                        <mat-label>Company Name</mat-label>
+                        <input matInput placeholder="Enter Company Name">
+                      </mat-form-field>
+                      <mat-form-field appearance="fill"  class="col-md-12">
+                        <mat-label>Additional Comments</mat-label>
+                        <textarea matInput  placeholder="Types Additional Comments here"></textarea>
+                    </mat-form-field>
+                    <!-- <button mat-button class=" mt-btn small white mt-25" type="button"> Schedule a demo  <span ><mat-icon class="pt-2">trending_flat</mat-icon></span></button> -->
+                    <button mat-raised-button class="ms-3 mt-btn text-center pb-4">Submit <span ><mat-icon class="pt-2">trending_flat</mat-icon></span></button>
+                </div>
+                </form>    
+            </div>
+            <div class="col-md-6 mt-5">
+                <img src="assets/img/page/contact-us.svg" alt="" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container debt my-5">
+    <div class="debtstyle text-center py-5 text-white">
+        <h1>{{'contact.title2' | translate}}</h1>
+        <p>Please give us your details and we will get back to you</p>
+        <div class="d-none d-lg-block">
+            <form class="d-flex justify-content-around ">
+                <mat-form-field appearance="fill" class="w-25">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Enter Name" >
+                  </mat-form-field>
+                  <mat-form-field appearance="fill" class="w-25">
+                    <mat-label>Mobile</mat-label>
+                    <input matInput placeholder="Enter Mobile" >
+                  </mat-form-field>
+                  <button mat-raised-button class="w-25 ms-3 mt-btn2 text-center pb-4">Submit Details <span ><mat-icon class="pt-2">trending_flat</mat-icon></span></button>
+            </form>
+        </div>
+        <div class="d-lg-none">
+            <form class="d-flex flex-column">
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Enter Name">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-label>Mobile</mat-label>
+                    <input matInput placeholder="Enter Mobile">
+                </mat-form-field>
+                <button mat-raised-button class="w-100 mt-3 mt-btn2 text-center pb-4">Submit Details <span><mat-icon class="pt-2">trending_flat</mat-icon></span></button>
+            </form>
+        </div>
+    </div>
+</div>

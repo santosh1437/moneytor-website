@@ -1,0 +1,38 @@
+{
+    "header": {
+        "t1": "Home",
+        "t2": "About Us",
+        "t3": " Solutions ",
+        "t4": " Clients ",
+        "t5": "Reach out",
+        "t6": " Blog ",
+        "t7": " Demo "
+    },
+    "home":{
+        "btn":" Schedule a demo "
+    },
+    "about": {
+        "title": "We help you collect more",
+        "title2": "Our Investors & Accelerators"
+    },
+    "solution": {
+        "title1": "Our Offerings",
+        "title2": "SaaS",
+        "title3": "Featured Media Coverage"
+    },
+    "clients": {
+        "title": "Our Journey"
+    },
+    "contact": {
+        "title1":"Reach out to us",
+        "title2":"Want to clear your debt?"
+    },
+    "blog":{
+        "title":"Our Recent Posts"
+    },
+    "footer":{
+        "title1": "Quick Links",
+        "title2": "Company",
+        "title3": "Our Branches"
+    }
+}
